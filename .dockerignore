@@ -1,0 +1,34 @@
+# Virtualenvs - the image builds its own
+env/
+venv/
+.venv/
+
+# Bytecode
+__pycache__/
+*.pyc
+*.pyo
+
+# Notebooks / media
+*.ipynb
+.ipynb_checkpoints/
+*.pdf
+*.png
+*.jpg
+
+# NOTE: documentation/ is NOT excluded - it has runtime Python modules
+# (the description strings imported by the route files). Only skip the non-code:
+documentation/*.md
+documentation/*.html
+
+# Git / editor
+.git/
+.gitignore
+.claude/
+.idea/
+.vscode/
+
+*.log
+
+# Secrets: injected at runtime by `env_file: .env`, never baked into the image
+.env
+*.env

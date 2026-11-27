@@ -1,0 +1,32 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environments
+env/
+venv/
+.venv/
+
+# Secrets (.env.example IS committed)
+.env
+*.env
+!.env.example
+
+# IDE / OS
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Tools
+.pytest_cache/
+.mypy_cache/
+.coverage
+*.log
+.ipynb_checkpoints/
+*.ipynb
+
+# Docker
+docker-compose.override.yml
